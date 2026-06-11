@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4070f4;
+}
+
+.input-box {
+    position: relative;
+    height: 76px;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CORREÇÃO: Alinhando o ícone de lupa perfeitamente ao centro vertical */
+.input-box i {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
+    color: #707070;
+}
+
+/* CORREÇÃO: Resetando estilos nativos e adicionando espaçamento nas laterais */
+.input-box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    color: #333;
+    /* 60px na esquerda deixa espaço para a lupa | 140px na direita protege para o texto não invadir o botão */
+    padding: 0 140px 0 65px; 
+}
+
+/* CORREÇÃO: Estilizando o botão para deixá-lo moderno dentro do container */
+.input-box .button {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #4070f4;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.input-box .button:hover {
+    background: #265df2;
+}
